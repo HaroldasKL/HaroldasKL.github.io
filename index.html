@@ -1,20 +1,19 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Login Page</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <button type="submit">Login</button>
-    </form>
-    <p id="errorMessage" class="error-message"></p>
+  <div class="container">
+    <h1>Will you be my valentine?</h1>
+    <div class="buttons">
+      <button onclick="respond('Yes')">Yes</button>
+      <button onclick="respond('No')">No</button>
+    </div>
+    <p id="response"></p>
   </div>
 
   <script src="script.js"></script>
